@@ -7,7 +7,7 @@ ENV PYTHONFAULTHANDLER=1 \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=90 \
-    POETRY_VERSION=1.1.0
+    POETRY_VERSION=1.1.3
 
 RUN printenv && \
     apt-get update && \
