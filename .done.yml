@@ -1,0 +1,14 @@
+kind: pipeline
+type: docker
+name: mopano_poetry
+
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    repo: mopano/poetry
+    auto_tag: true
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
